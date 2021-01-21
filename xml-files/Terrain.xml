@@ -1,0 +1,52 @@
+<graph id="Graph">
+  <version>1.0</version>
+  <node id="Read">
+    <operator>Read</operator>
+    <sources/>
+    <parameters>
+      <file>${file}</file>
+    </parameters>
+  </node>
+  <node id="Terrain-Correction">
+    <operator>Terrain-Correction</operator>
+    <sources>
+      <sourceProduct refid="Read"/>
+    </sources>
+    <parameters>
+      <sourceBands/>
+      <demName>${demName}</demName>
+      <externalDEMFile/>
+      <demResamplingMethod>${demResamplingMethod}</demResamplingMethod>
+      <pixelSpacingInMeter>${pixelSpacingInMeter}</pixelSpacingInMeter>
+      <mapProjection>${mapProjection}</mapProjection>
+      <nodataValueAtSea>${nodataValueAtSea}</nodataValueAtSea>
+      <saveDEM>${saveDEM}</saveDEM>
+      <saveLocalIncidenceAngle>${saveLocalIncidenceAngle}</saveLocalIncidenceAngle>
+      <saveProjectedLocalIncidenceAngle>${saveProjectedLocalIncidenceAngle}</saveProjectedLocalIncidenceAngle>
+      <saveSelectedSourceBand>${saveSelectedSourceBand}</saveSelectedSourceBand>
+      <applyRadiometricNormalization>${applyRadiometricNormalization}</applyRadiometricNormalization>
+      <saveSigmaNought>${saveSigmaNought}</saveSigmaNought>
+      <saveGammaNought>${saveGammaNought}</saveGammaNought>
+      <saveBetaNought>${saveBetaNought}</saveBetaNought>
+      <incidenceAngleForSigma0>${incidenceAngleForSigma0}</incidenceAngleForSigma0>
+      <incidenceAngleForGamma0>${incidenceAngleForGamma0}</incidenceAngleForGamma0>
+      <auxFile>${auxFile}</auxFile>
+      <externalAuxFile/>
+    </parameters>
+  </node>
+  <node id="Speckle-Filter">
+    <operator>Speckle-Filter</operator>
+    <sources>
+      <sourceProduct refid="Terrain-Correction"/>
+    </sources>
+    <parameters>
+      <sourceBands/>
+      <filter>${filter}</filter>
+      <filterSizeX>${filterSizeX}</filterSizeX>
+      <filterSizeY>${filterSizeY}</filterSizeY>
+      <dampingFactor>${dampingFactor}</dampingFactor>
+      <estimateENL>${estimateENL}</estimateENL>
+      <enl>${enl}</enl>
+    </parameters>
+  </node>
+</graph>
