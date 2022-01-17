@@ -1,6 +1,6 @@
 # Upland Burn Project Jupyter Notebooks
 
-![Zendo DOI](https://zenodo.org/badge/331396785.svg)
+[![DOI](https://zenodo.org/badge/331396785.svg)](https://zenodo.org/badge/latestdoi/331396785)
 
 This repository is part of the final set of deliverables produced by Pixalytics and EnviroSAR under their contract in response to the Department for Environment & Rural Affairs (DEFRA) Invitation To Tender (ITT) 76044 “Upland Burn Detection with Radar”. 
 
