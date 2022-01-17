@@ -1,4 +1,7 @@
 # Upland Burn Project Jupyter Notebooks
+
+![Zendo DOI](https://zenodo.org/badge/331396785.svg)
+
 This repository is part of the final set of deliverables produced by Pixalytics and EnviroSAR under their contract in response to the Department for Environment & Rural Affairs (DEFRA) Invitation To Tender (ITT) 76044 “Upland Burn Detection with Radar”. 
 
 For this project, three case study areas were of interest: Isle of Skye, Cairngorms and the Peak District National Park. From the following DropBox link, a subset of the data generated can be downloaded for testing the Jupyter Notebooks: https://www.dropbox.com/s/phje3itiat6yt33/my_shared_data_folder.tar.gz?dl=0 
